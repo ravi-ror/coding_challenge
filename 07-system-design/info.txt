@@ -1,0 +1,25 @@
+System design
+
+https://www.youtube.com/c/ExponentTV/videos
+
+https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX
+
+https://www.youtube.com/c/sudoCODE/videos
+
+
+
+blogs
+
+http://highscalability.com/all-time-favorites/
+
+https://www.scaleyourapp.com/
+
+https://engineering.grab.com/
+
+https://martinfowler.com/articles/feature-toggles.html
+
+https://eng.uber.com/
+
+https://netflixtechblog.com/
+
+https://medium.com/tinder-engineering
