@@ -1,3 +1,63 @@
+System desgin problems:
+-----------------------
+
+parking lot problem
+design zomato / swiggy
+design facebook / twitter
+design netflix
+design youtube
+design whattsapp
+design amazon / flipkart
+design payment system
+blockchain application
+
+URL Shortening Service - TinyURL Design
+Distributed Cache Design
+Ride-Sharing Service - Uber Design
+Online Dating Service - Tinder Design
+File Sharing Service - Dropbox Design
+Distributed Message Queue System Design
+Stripe - Payment Gateway System Design
+
+
+Technologies and terms to learn:
+--------------------------------
+
+Monolithics, microservices
+gateways: kong, ambassador
+orchestration: docker, kubernetes, istio service discovery
+Authentication: hydra, oauth
+loadbalancers: nginx (vertical horizontal scaling, loadbalancing algorithms)
+Monitoring: graphana, promethous, NewRelic
+servers: apache, nginx, puma, IIS
+Message broker: Rabbitmq, kafka (with schema registry) 
+cloud: AWS, Google, Azure
+
+AWS services: s3 bucket, glacier, Amazon Lambda,  serverless, ec2, rds, cloudFront, SNS, vpc, sqs, elastic beanstalk, dynamo db, Redshift
+Azure srvices: Disastor recovery, canary deployment, dbs, index service, azure functions, VPN, DNS, CDN,
+Logging: kibana, azure log analytics
+db: postgres, mysql, mongodb, redis, memcache, elastic-search, procedure, index, sharding, clustering, cold-storage, hot storage, glacier db,
+bigdata, hadoop, hbase, hive, master-client, replication
+multithreading, multiprocess
+cycler, zapier, rudder, Disposable Temporary Email (inboxkitten opensource)
+CRM: salesforce, zoho, zendesk, hubspot
+Metabase
+conferencing: webex, zoom, google meet, ms team
+Security: captcha, rate-limiter, WAF (firewall)
+static code analysis: sonarQube
+linting, prettier, test-cases (rspec, mocha, cucumber)
+automation: selenium, protrector
+cloud provisioning and deployment: ansible, helm, Terraform, puppet, chef
+twilio, slack, jira
+CI-CD pipelining, circle-ci
+postman
+load testing: jmeter, 
+editors: sublime, vscode(with gitlens extenstion)
+
+
+Channels and blogs
+==================
+
 System design
 
 https://www.youtube.com/c/ExponentTV/videos
@@ -10,16 +70,23 @@ https://www.youtube.com/c/sudoCODE/videos
 
 blogs
 
+https://leetcode.com/
+https://codersguild.github.io/System-Design/
 http://highscalability.com/all-time-favorites/
-
 https://www.scaleyourapp.com/
-
 https://engineering.grab.com/
-
 https://martinfowler.com/articles/feature-toggles.html
-
 https://eng.uber.com/
-
 https://netflixtechblog.com/
-
 https://medium.com/tinder-engineering
+
+https://www.linkedin.com/pulse/system-design-practice-designing-payment-avik-das
+https://trimplement.com/blog/2020/06/payment-gateway-development-marketplaces/
+https://github.com/yangshun/tech-interview-handbook/tree/master/experimental/design
+
+https://www.hiredintech.com/courses/system-design
+https://hackernoon.com/anatomy-of-a-system-design-interview-4cb57d75a53f
+https://www.interviewbit.com/courses/system-design
+https://github.com/checkcheckzz/system-design-interview
+https://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview
+https://www.educative.io/collection/5668639101419520/5649050225344512
