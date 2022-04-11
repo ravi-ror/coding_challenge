@@ -5,3 +5,15 @@ https://github.com/Developer-Y/cs-video-courses
 https://github.com/ossu/computer-science
 
 https://teachyourselfcs.com/
+
+
+
+https://www.freecodecamp.org/news/free-online-programming-cs-courses/
+
+https://www.tutorialspoint.com/computer_science_tutorials.htm
+
+Inter process comunnication
+https://www.tutorialspoint.com/inter_process_communication/index.htm
+
+
+https://www.tutorialspoint.com/compiler_design

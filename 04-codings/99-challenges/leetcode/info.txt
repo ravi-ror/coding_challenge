@@ -1,0 +1,4 @@
+https://leetcode.com/problemset/all/?page=1
+https://leetcode.com/discuss/interview-question/system-design?currentPage=1&orderBy=hot&query=
+https://baffinlee.com/leetcode-javascript/
+https://github.com/nch3ng/leetcode-1

@@ -1,4 +1,74 @@
+Learning channels:
+
+https://github.com/Developer-Y/cs-video-courses
+https://www.openculture.com/computer_science_free_courses
+https://www.classcentral.com/subject/cs
+
 
 https://www.youtube.com/c/ExponentTV/videos
 
 https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX
+
+https://www.youtube.com/channel/UCQYMhOMi_Cdj1CEAU-fv80A
+
+https://www.youtube.com/channel/UCJihyK0A38SZ6SdJirEdIOw
+
+https://www.youtube.com/c/khanacademy/search?query=computer
+
+https://www.youtube.com/channel/UCFWCFYvqnAMT-jcCqTp_SlA
+
+
+
+
+
+
+Udacity playlists : http://www.youtube.com/user/Udacity/videos?view=1
+MIT playlists : http://www.youtube.com/user/MIT/videos?view=1
+Stanford playlists : http://www.youtube.com/user/StanfordUniversity/videos?view=1
+UC Berkeley playlists : http://www.youtube.com/user/UCBerkeley/videos?view=1
+NPTEL / IIT playlists : http://www.youtube.com/user/nptelhrd/videos?view=1
+UNSW elearning playlists : http://www.youtube.com/user/UNSWelearning/videos?view=1
+O'Reilly's media's channel - Lots of webcasts and tech talks - http://www.youtube.com/user/OreillyMedia/videos?view=1
+Google Tech Talks : http://www.youtube.com/user/GoogleTechTalks/videos?view=0
+Google Developers playlists : http://www.youtube.com/user/GoogleDevelopers/videos?view=1
+Marakana tech TV : http://www.youtube.com/user/MarakanaTechTV
+Next Day Videos : https://www.youtube.com/user/NextDayVideo/videos
+Google User Groups videos : http://www.youtube.com/user/UserGroupsatGoogle/videos
+Khan Academy (for CS math) : http://www.youtube.com/user/khanacademy/videos?view=1
+Computer History Museum videos (for inspiration) : http://www.youtube.com/user/ComputerHistory/videos?view=1
+
+
+Programming
+
+    Thenewboston or Bucky's programming tutorials : http://www.youtube.com/user/thenewboston/videos?view=1
+
+XoaX.net's channel: http://www.youtube.com/user/xoaxdotnet/videos?view=1
+Tcation's Videos for IT professionals : http://www.youtube.com/user/tcation/videos?view=1
+BrianTWill's Code School channel : http://www.youtube.com/user/briantwill/videos?view=1
+Europython : http://www.youtube.com/user/PythonItalia/videos?view=1
+PyConAU : http://www.youtube.com/user/PyConAU/videos?view=1
+
+Pycon08 : http://www.youtube.com/user/PyConAU/videos?view=0
+YAPC (Perl) Europe talks : http://www.youtube.com/user/yapceu2010/videos?view=1
+(Perl) Bremnz's channel : http://www.youtube.com/user/bermnz/videos?view=1
+PHP Academy videos (as suggested by Edoardo Moreni) : http://www.youtube.com/user/phpacademy/videos?view=1
+
+
+UNIX / Linux
+
+    POS/420 videos by Scott : http://www.youtube.com/user/uophx/videos
+
+
+Databases / NoSQL / BigData:
+
+    IBM Big data : https://www.youtube.com/user/ibmbigdata
+
+Hadoop Summit : https://www.youtube.com/user/HadoopSummit/videos
+Intellipaat S training videos: https://www.youtube.com/channel/UCCktnahuRFYIBtNnKT5IYyg/videos
+HandsonERP : https://www.youtube.com/user/handsonerp/videos
+MongoDB official : https://www.youtube.com/user/MongoDB/videos
+Oracle : https://www.youtube.com/user/OracleLearning/videos
+Datastax videos : https://www.youtube.com/user/DataStaxMedia/videos
+
+
+
