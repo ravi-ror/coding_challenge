@@ -30,7 +30,7 @@ Authentication: hydra, oauth
 loadbalancers: nginx (vertical horizontal scaling, loadbalancing algorithms)
 Monitoring: graphana, promethous, NewRelic
 servers: apache, nginx, puma, IIS
-Message broker: Rabbitmq, kafka (with schema registry) 
+Message broker: Rabbitmq, kafka with avro schema (with schema registry) 
 cloud: AWS, Google, Azure
 
 AWS services: s3 bucket, glacier, Amazon Lambda,  serverless, ec2, rds, cloudFront, SNS, vpc, sqs, elastic beanstalk, dynamo db, Redshift
@@ -39,9 +39,9 @@ Logging: kibana, azure log analytics
 db: postgres, mysql, mongodb, redis, memcache, elastic-search, procedure, index, sharding, clustering, cold-storage, hot storage, glacier db,
 bigdata, hadoop, hbase, hive, master-client, replication
 multithreading, multiprocess
-cycler, zapier, rudder, Disposable Temporary Email (inboxkitten opensource)
+cycler, zapier, mixpanel , rudder, Disposable Temporary Email (inboxkitten opensource)
 CRM: salesforce, zoho, zendesk, hubspot
-Metabase
+Metabase, schemaspy to show schema of db
 conferencing: webex, zoom, google meet, ms team
 Security: captcha, rate-limiter, WAF (firewall)
 static code analysis: sonarQube
@@ -53,6 +53,8 @@ CI-CD pipelining, circle-ci
 postman
 load testing: jmeter, 
 editors: sublime, vscode(with gitlens extenstion)
+jenkins-x
+storybook, swagger api listing
 
 
 Channels and blogs
@@ -66,7 +68,7 @@ https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX
 
 https://www.youtube.com/c/sudoCODE/videos
 
-
+https://www.youtube.com/watch?v=fO8hGwhRSYY
 
 blogs
 

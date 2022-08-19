@@ -1,0 +1,336 @@
+1. Projects worked:
+
+2. Project specifications and architecture:
+  1. Requirement Analysis and Software Requirement Specification (document for software specifications)
+  2. Project plan and estimation
+  3. Technology: frontend and backend
+  4. databases: Rdbms(postgres vs mysql) & NoSql
+  5. Source Code Repository: Github, Bitbucket
+  6. Version Control: Git, SVN
+  7. Bug Reporting tool: Jira, Trello
+
+3. Flow chart and Project plan
+  1. Modularize the large functionality
+  2. Waterfall vs Agile/sprint model
+  3. Team management, coordination and Resource allocation (designing and coding teams)
+
+4.  Redis and memchache
+
+5.  Performance tools:
+    1. debugging tools pry, better errors, bullet
+    2. mini profiler, newrelic
+    3. page caching
+    4. Workers for background jobs
+
+6.  Servers:
+    1. Web: Apache Vs Nginx
+    2. App: Passenger, Thin, Unicorn, Puma
+
+7.  Deployment:
+    1. capistrano
+    2. helm / chef /puppet
+
+8.  Cloud:
+    1. Amazon ec2 instance and s3 bucket
+    2. Heroku
+    3. Azure
+
+9. Challenges faced:
+
+   Moving old application in new version
+   Heavy lifting of active record queries: search using Solr search implemented
+   Customizing libraries for use: Devise strategy for authentication
+   Thid party leads submission for promotional offers: Bellafind product promotion
+
+
+========================================================================
+
+2.1
+
+  Many projects fail because they start implementing the system without determining what they are building and what the customer really wants. The objective of requirement analysis is to fully understand the user requirements, remove inconsistencies, anomalies, etc. Some requirements are too clear and some are hidden. Some clients have good technical knowledge so requirements are very clear. So the requirement analysis is all about finding project specific requirements.
+
+  Once the Requirements has been gathered, the team leader prepares a Document. This document is known as SRS (Software Requirement and Specification) Document. The document is sent to the Client. Once the client approves the SRS Document, Designing phase starts.
+
+  Basically projects fall in two categories:
+  1)implementation (from scratch)
+  2) for enchancement or maintenance
+
+2.2
+
+ A deadline for a project delivery is set. That may determine the cost of the project. Projects may be fixed priced or on hourly rate. The whole project is split in small modules. A module can have many functionalities. The functionalities is divided among designers and developers. Also frequest releases are sent to client on module completions. Version management softwares are used to keep track of frequent deliveries.
+
+
+2.3
+
+ Backend ROR:
+
+ A suitable backend technology is used for project specific. Ruby on Rails has been widely used for development. The main reason for being popular:
+
+ It is open source
+ It is fast for development
+ Has wide community and support
+ Frequent releases and patches
+ Shared libraries/gems
+
+ in initial phase Ruby on Rails gained popularity for fast development. But it soon suffered the scalability and performance issues on large userbase. Database queries in ORM (object relation mappeing: ActiveRecord ) were slow with huge data. Since then a lot many changes have been made to ORM to execute faster. Well its been an old debate now.
+
+
+ Indexing data in tables. Caching was implmented which improved performance. Redis can also be used for fast access. Where required bring data in once query rather then hitting database frequently (example: in a loop query fetching associated data). Mass operation can be done in batches. Sql queries can be used instead of initializing model objects.
+
+ Memcached with database you can handle millions of objects. The architecture uses database to handle writes and Memcached to handle high read loads. If you have billions of users like Google, Twitter and Facebook, then probably a distributed architecture will be better.
+
+
+ Frontend HTML/Javascript/Angular:
+
+ Latest we used Angular for our frontend. Angular has become popular for its architecture and support. It is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects. It extends HTML DOM with additional attributes and makes it more responsive to user actions. AngularJS is open source, completely free, and used by thousands of developers around the world. It uses MVC architecute.
+
+
+2.4
+
+MySql/Postgres/Mongodb
+
+In most of our projects we use MySql and Postgres. PostgreSQL provides significant performance features.
+
+
+For structured data we have used MySql and Postgres. Using RDBMs have large benefits. Data can be easily stored and accessed. Indexing on data can be done for fast access. Support for complex queries like join & group by clauses.
+
+However, RDBMS have challenges in handling huge data volumes of Terabytes & Peta bytes. It does not scale well for huge volume of data. You require very expensive hardware. But in any case NoSql does not replace RDBMs.
+
+MySql:
+=======
+
+MySQL is the most popular one of all the large-scale database servers. It is a feature rich, open-source product that powers a lot of web-sites and applications online. Getting started with MySQL is relatively easy and developers have access to a massive array of information regarding the database on the internet.
+
+Advantages of MySQL
+
+Easy installation
+Supports a lot of the SQL functionality that is expected from a RDBMS.
+A lot of security features, some rather advanced, are built in MySQL.
+MySQL can handle a lot of data and furthermore it can be used "at scale", if needed be.
+Giving up some standards allows MySQL to work very efficiently and cut corners, thus providing speed gain
+
+
+Some MySql engines:
+
+  MyISAM:
+
+  MyISAM was the previous default storage engine for MySQL (before MySQL 5.6). It is notably faster than InnoDB in the cases of table-scans, index-scans, insert-only and some single-threaded operations. It is likely to perform better than PostgreSQL in these same scenarios.
+
+  MyISAM tables suffer from table-level locking, and do not support ACID features such as data durability, crash recovery, transactions or foreign keys. Previously it has been claimed to perform better in read-only or read-heavy operations, but this is no longer necessarily the case.
+
+  InnoDB:
+
+  InnoDB is an ACID compliant, transactional storage engine using MVCC technology. It's the normal choice for most modern applications using MySQL.
+
+  The InnoDB storage engine stores the data with the primary key, so primary key lookups are fast. Good choice of primary key for physical optimisation can be very useful; in cases where it's undesirable or where the desired primary key produces poor physical performance a simple integer can be used. An internal integer primary key is the default if no primary key or unique column is present.
+
+  The InnoDB engine automatically generates hash index entries when processing SELECTs. This feature can be turned off if necessary; some workloads perform better without it.
+
+
+Postgres:
+==========
+
+PostgreSQL has one storage engine; MySQL has nine, but only two of those really matter to most users: MyIsam and InnoDB. MyIsam was the original engine, built for speed, but it lacked transactions; InnoDB has transactions and is speedier than MyIsam, which is why it’s the default storage engine. Both MySQL’s InnoDB and PostgreSQL are fully ACID compliant, so there’s really no difference between the platforms.
+
+
+NOTE:
+
+PostgreSQL is still considered better for joins especially as MySQL doesn’t support Full Outer Joins.
+JSON Support and NoSQL. This is a recent addition to PostgreSQL.
+There’s less hassle with licensing, custom data types
+
+
+NoSql:
+=======
+
+Not all data is structured. Sometimes we have to store unstructured data or large amout of data. There we use NoSql. We have used mongodb in our projects. MongoDB is an open-source document database, and leading NoSQL database. MongoDB avoids the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas.
+
+
+The benefits of NoSql over RDBMS are:
+
+It support semi-structured data and volatile data
+It does not have schema
+Read/Write is fast
+Horizontal scalability can be achieved easily
+Will support Bigdata in volumes of Terra Bytes & Peta Bytes
+Provides good support for Analytic tools on top of Bigdata
+Memory caching option is available to increase the performance of queries
+Faster development life cycles for developers
+
+
+2.5
+
+A source code repository is a file archive and web hosting facility where large amounts of source code for software, but also for web pages are kept, either publicly or privately.
+
+GitHub is a web-based Git repository hosting service. It offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
+
+Github Vs Bitbucket:
+
+  Public Repos and Open Source Development:
+
+  GitHub is the clear winner here. Unlike Bitbucket, it doesn't limit the number of contributors and has way more users. Also, it hosts a large number of major projects, like Linux and jQuery. So, if all you do is open source development and nothing else, go with GitHub.
+
+  Private Repos:
+
+  Bitbucket is the clear winner here. Unlike GitHub, you can create an unlimited number of private repositories. So, if all you want is a fancy Dropbox and nothing else, go with Bitbucket.
+
+
+2.6
+2.7
+
+
+3.1
+
+ Breaking large application in small modules. Divide the module in small fuctionalities. This way the application can be better structured. Developers can work on multiple functionalities simultanously.
+
+
+3.2
+
+ Waterfall:
+
+ Much like construction and manufacturing workflows, waterfall methodology is a sequential design process. This means that as each of the eight stages are completed, the developers move on to the next step.
+
+ As this process is sequential, once a step has been completed, developers can’t go back to a previous step – not without scratching the whole project and starting from the beginning. There’s no room for change or error, so a project outcome and an extensive plan must be set in the beginning and then followed carefully.
+
+
+ Agile:
+
+ Agile came about as a “solution” to the disadvantages of the waterfall methodology. Instead of a sequential design process, the Agile methodology follows an incremental approach.
+
+ Developers start off with a simplistic project design, and then begin to work on small modules. The work on these modules is done in weekly or monthly sprints, and at the end of each sprint, project priorities are evaluated and tests are run. These sprints allow for bugs to be discovered, and customer feedback to be incorporated into the design before the next sprint is run.
+
+
+3.3
+
+
+4.1
+
+ Redis:
+ ------
+
+  Redis is an open source, in-memory data structure store, used as database, cache. It supports data structures such as strings, hashes, lists, sets, sorted sets etc.
+
+  REDIS is an open source Database, in-memory data structure store. REDIS is a Key value store meaning is primarily design to store data using a Unique Key. REDIS stores data in-memory, it stores its data in the RAM of the computer is running on so it is extremely fast. REDIS supports data structures such as String, Hashes, Lists, Sets Sorted Sets, Bitmaps, Hyperloglogs and Geospatial indexes.
+
+  REDIS Data Type: String Hashes List Sets Sorted Sets
+
+  Uses:
+
+   caching(due to its speed).
+   If you want a highly scalable data store shared by multiple processes, multiple applications, or multiple servers.
+
+
+ Memcached:
+ ----------
+
+ In general, database calls are slow, since the query takes CPU resources to process and data is (usually) retrieved from disk. On the other hand, an in-memory cache, like Memcached, takes very little CPU resources and data is retrieved from memory instead of disk. The lightened CPU is an effect of Memcached's design; it's not queryable, like an SQL database. Instead, it uses key-value pairs to retrieve all data and you cannot retrieve data from Memcached without first knowing its key.
+
+ Memcached stores the key-value pairs entirely in memory. This makes retrieval extremely fast, but also makes it so the data is ephemeral. In the event of a crash or reboot, memory is cleared and all key-value pairs need to be rebuilt. There are no built-in high-availability and/or fail-over systems within Memcached.
+
+
+
+ Redis Vs Memcached:
+ -------------------
+
+ If you are using Memcached then data is lost with a restart and rebuilding cache is a costly process. On the other hand, Redis can handle persistent data. By default, Redis syncs data to the disk at least every 2 seconds.
+ There is only one data type used by Memcachedd which is String. In comparison Redis has a stronger data structures.
+ Memcachedd’s system is more effective because it uses less memory for metadata.
+
+
+ 5.1
+  Many debugging and performance tools are available in Ruby on Rails. Pry and better errors gems are useful for debugging. Bullet gem indicates where N+1 query (accessive database call in loop) is used.
+
+ 5.2
+  Miniprofiler and Newrelic tools can be used to check the performance. It gives gui reporting of time taken by a the processes(like data fetching and template rendering)
+
+ 5.3
+  Page caching is a Rails mechanism which allows the request for a generated page to be fulfilled by the webserver (i.e. Apache or NGINX), without ever having to go through the Rails stack at all. Obviously, this is super-fast. However, it can't be applied to every situation (such as pages that need authentication).
+
+  Action Caching works like Page Caching except the incoming web request hits the Rails stack so that before filters can be run on it before the cache is served. This allows authentication and other restrictions to be run while still serving the result of the output from a cached copy.
+
+  Query caching is a Rails feature that caches the result set returned by each query so that if Rails encounters the same query again for that request, it will use the cached result set as opposed to running the query against the database again.
+
+ 5.4
+
+  resque/sidekiq/delayed_jobs etc.
+
+  Asynchronous tasks are those that may be started from a normal web request, but require a longer time to complete than the normal request. Because these requests cannot be processed immediately and return a response, they are known as asynchronous. In order to not interrupt the normal synchronous workflow of an application, asynchronous tasks are normally processed on a separate thread or are spawned as a separate process entirely. These are called background jobs.
+
+  Resque is a Redis-backed Ruby library for creating background jobs, placing those jobs on multiple queues, and processing them later.
+
+ 6.1
+
+ A web server is a computer system that processes requests via HTTP, the basic network protocol used to distribute information on the World Wide Web.
+
+ An app server is the thing that actually runs your app. Your app server loads your code and keeps your app in memory. When your app server gets a request from your web server, it tells your app about it. After your app is done handling the request, the app server sends the response back to the web server (and eventually to the user)
+
+ Apache and Nginx:
+ ----------------
+ They're both web servers. They can serve static files. Apache is more popular and has more features, Nginx is smaller and faster and has less features.
+
+ Apache and Nginx can also act as reverse proxies, meaning that they can take an incoming HTTP request and forward it to another server, which also speaks HTTP. When that server responds with an HTTP response, Apache/Nginx will forward the response back to the client; You will learn later why this is relevant.
+
+ Nginx came onto the scene after Apache, with more awareness of the concurrency problems that would face sites at scale. Leveraging this knowledge, Nginx was designed from the ground up to use an asynchronous, non-blocking, event-driven connection handling algorithm.
+
+ Nginx spawns worker processes, each of which can handle thousands of connections. The worker processes accomplish this by implementing a fast looping mechanism that continuously checks for and processes events. Decoupling actual work from connections allows each worker to concern itself with a connection only when a new event has been triggered.
+
+ Each of the connections handled by the worker are placed within the event loop where they exist with other connections. Within the loop, events are processed asynchronously, allowing work to be handled in a non-blocking manner. When the connection closes, it is removed from the loop.
+
+ This style of connection processing allows Nginx to scale incredibly far with limited resources. Since the server is single-threaded and processes are not spawned to handle each new connection, the memory and CPU usage tends to stay relatively consistent, even at times of heavy load.
+
+ Nginx Vs Apache
+
+  Nginx is based on event-driven architecture. Apache is based on process-driven architecture. It is interesting to note that Apache in its earliest release was not having multitasking architecture. Later Apache MPM (multi-processing module) was added to achieve this.
+
+  Nginx doesn’t create a new process for a new request. Apache creates a new process for each request.
+
+  In Nginx, memory consumption is very low for serving static pages. But, Apache’s nature of creating new process for each request increases the memory consumption.
+
+  Several benchmarking results indicates that when compared to Apache, Nginx is extremely fast for serving static pages.
+
+  Nginx development started only in 2002. But Apache initial release was in 1995.
+
+  In complex configurations situation, when compared to Nginx, Apache can be configured easily as it comes with lot of configuration features to cover wide range of requirements.
+
+  When compared to Nginx, Apache has excellent documentation.
+
+  In general, Nginx have less components to add more features. But Apache has tons of features and provides lot more functionality than Nginx.
+
+  Nginx do not support Operating Systems like OpenVMS and IBMi. But Apache supports much wider range of Operating Systems.
+
+  Since Nginx comes only with core features that are required for a web server, it is lightweight when compared to Apache.
+
+  The performance and scalability of Nginx is not completely dependent on hardware resources, whereas the performance and scalability of the Apache is dependent on underlying hardware resources like memory and CPU.
+
+
+
+ Why must some app servers be put behind a reverse proxy?
+
+ Some app servers can only handle 1 request concurrently, per process. If you want to handle 2 requests concurrently you need to run multiple app server instances, each serving the same Ruby app. You must then setup Apache or Nginx to reverse proxy.
+
+
+6.2
+
+Thin:
+
+Thin is built on top of EventMachine, which provides event-based IO. Thin also uses less memory. Within an event-based application, everything must be non-blocking to get the real benefit of event-based programming. The event-loop is running in a single thread within a single process. Therefore, the first time you do something that is blocking, it causes the whole event loop to stop and wait for you.
+
+Thin claims to be the "most secure, stable, fast and extensible Ruby web server". It's similar to Unicorn in that it launches multiple workers and listens to a socket, but different in that it has no master controlling process and has one specific socket per worker process.
+
+Note: It has a threaded mode, which can be enabled by passing --threaded or by setting threaded: true in the appropriate configuration
+
+
+Unicorn:
+
+Unicorn is an application server for fast clients and applications that has a really great operational infrastructure under the hood, relying on in-memory forking to recover crashed workers. Unicorn launches a master process that contains one single copy of your application in memory, and then forks itself into worker processes. The number of worker processes depends on how Unicorn is configured; it could be one to as many as the machine can reasonably hold. Unicorn uses forked processes to achieve concurrency.
+
+Unicorn will reap and restart workers that die from broken apps. There's no need to manage multiple processes or ports yourself. Unicorn can spawn and manage any number of worker processes you choose to scale to your backend.
+
+
+Puma:
+
+Puma is an Engine Yard sponsored project. Its primary strength is that it's a truly concurrent application server. Puma can be configured to bind to ports, or to pull from a socket, just like Thin and Unicorn. However, unlike Thin and Unicorn, Puma will open a new thread for each incoming request. This means that blocking actions that aren't necessarily heavy on CPU usage should not be a problem for Puma.
+
+7.
+
+8.

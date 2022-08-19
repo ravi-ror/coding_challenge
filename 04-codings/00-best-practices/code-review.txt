@@ -1,0 +1,13 @@
+https://www.youtube.com/watch?v=a9_0UUUNt-Y
+https://www.youtube.com/watch?v=wQjsneX5XbQ
+
+https://github.com/joho/awesome-code-review
+https://google.github.io/eng-practices/
+https://waverleysoftware.com/blog/code-review-best-practices/
+https://medium.com/@jglovier/improving-code-review-on-github-ca550ceac5b8
+https://github.com/mgreiler/all-about-code-review
+https://github.com/mgreiler/code-review-checklist
+https://github.blog/
+
+git 
+https://docs.github.com/en

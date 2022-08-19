@@ -1,0 +1,4 @@
+Datastructure and algorithms
+
+https://github.com/algorithm-visualizer/algorithms
+https://www.scaler.com/topics/data-structures
