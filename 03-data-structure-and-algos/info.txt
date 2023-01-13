@@ -1,4 +1,15 @@
 Datastructure and algorithms
 
-https://github.com/algorithm-visualizer/algorithms
+https://algs4.cs.princeton.edu
+https://algs4.cs.princeton.edu/code/
 https://www.scaler.com/topics/data-structures
+https://brilliant.org/
+https://iq.opengenus.org/
+https://www.javatpoint.com/
+https://www.techiedelight.com/
+https://practice.geeksforgeeks.org/explore?page=4&sortBy=submissions
+https://github.com/algorithm-visualizer/algorithms
+https://codecrucks.com/what-is-algorithm-nutshell-explanation/
+https://www.codingninjas.com/codestudio/problems
+
+https://medium.com/omarelgabrys-blog/algorithms-data-structures-series-85ec94eb8aff

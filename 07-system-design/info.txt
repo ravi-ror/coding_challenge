@@ -29,6 +29,7 @@ orchestration: docker, kubernetes, istio service discovery
 Authentication: hydra, oauth
 loadbalancers: nginx (vertical horizontal scaling, loadbalancing algorithms)
 Monitoring: graphana, promethous, NewRelic
+auto instrumentation with jaegar, zinpkin, open telemetery
 servers: apache, nginx, puma, IIS
 Message broker: Rabbitmq, kafka with avro schema (with schema registry) 
 cloud: AWS, Google, Azure
@@ -61,6 +62,8 @@ Channels and blogs
 ==================
 
 System design
+
+https://www.interviewbit.com/system-design-interview-questions/#
 
 https://www.youtube.com/c/ExponentTV/videos
 

@@ -1,0 +1,13 @@
+Build toy-language
+
+
+=============================
+source code / videos / book
+
+https://www.youtube.com/playlist?list=PLeLcvrwLe186iPHNWIpfCGURbzKxnO-NR
+Book: Build Your Own Programming Language
+https://github.com/PacktPublishing/Build-Your-Own-Programming-Language
+=======================================
+
+https://hackernoon.com/building-your-own-programming-language-from-scratch
+https://github.com/alexandermakeev/toy-language

@@ -4,3 +4,7 @@ https://github.com/cruxrebels/InterviewBit
 https://github.com/SidJain1412/CompetitiveProgramming
 https://github.com/babu-thomas/interviewbit-solutions
 https://github.com/tachyonlabs/CodePath-Alumni-Professional-Interview-Prep-Course
+
+
+System design:
+https://www.interviewbit.com/system-design-interview-questions/#cap-theorem
