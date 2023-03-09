@@ -1,0 +1,42 @@
+https://www.tutorialspoint.com/design_pattern
+https://github.com/jwasham/coding-interview-university
+
+
+nextjs, angular framework
+benchmarking
+best practices
+prettier
+lint
+performance benchmarking
+api loadtest
+share code using library
+
+build your UI components library on top of: unstyled component library
+headlessui, React Aria, 
+https://medium.com/@nirbenyair/headless-components-in-react-and-why-i-stopped-using-ui-libraries-a8208197c268
+https://backlight.dev/mastery/best-react-component-libraries-for-design-systems
+
+1. https://headlessui.com - Made by the tailwind people. Easy to style with Tailwind
+2. https://www.radix-ui.com - Another strong contender
+3. https://reach.tech
+4. https://react-spectrum.adobe.com/react-aria/index.html
+
+
+
+api data compressions in internal calls (proto schema)
+Accessibility (https://react-spectrum.adobe.com/react-aria/index.html)
+responsiveness
+opensource libraries
+build optimization
+webpack
+cdn
+image resizing and hosting
+security
+instrumentation, Logging
+vulnerabilty fixes
+compression
+api documentation (swagger)
+storybook
+software Patterns
+multithreading
+stackblitz/codepen for creating online

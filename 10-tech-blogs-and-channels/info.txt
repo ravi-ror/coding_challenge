@@ -1,9 +1,15 @@
 Learning channels:
 
+https://app.daily.dev/
+https://medium.com/@sanilkhurana7
+https://arslan-ahmad.medium.com/
+https://nodeweekly.com/
+https://javascriptweekly.com/
+https://news.ycombinator.com/
 https://github.com/Developer-Y/cs-video-courses
 https://www.openculture.com/computer_science_free_courses
 https://www.classcentral.com/subject/cs
-
+https://roadmap.sh/
 
 https://www.youtube.com/c/ExponentTV/videos
 

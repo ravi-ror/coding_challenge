@@ -3,7 +3,9 @@ Datastructure and algorithms
 https://algs4.cs.princeton.edu
 https://algs4.cs.princeton.edu/code/
 https://www.scaler.com/topics/data-structures
+https://github.com/trekhleb/javascript-algorithms
 https://brilliant.org/
+https://www.interviewbit.com/
 https://iq.opengenus.org/
 https://www.javatpoint.com/
 https://www.techiedelight.com/
@@ -13,3 +15,4 @@ https://codecrucks.com/what-is-algorithm-nutshell-explanation/
 https://www.codingninjas.com/codestudio/problems
 
 https://medium.com/omarelgabrys-blog/algorithms-data-structures-series-85ec94eb8aff
+

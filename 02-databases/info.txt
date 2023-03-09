@@ -1,0 +1,23 @@
+Database types:
+---------------
+
+RDBMS / relational / SQL db: better for ACID compliance, high Consistency, less Availability, vertical scaling,
+sharding, read replicas. Good for querying
+
+
+No-SQL / Non-relational / Schemaless db: huge data, high Availability, eventual Consistency, horizontal scaling
+(distributed db). Not all good for querying
+
+
+> Key-value stores: Amazon DynamoDB, Couchbase, Memcached, Redis
+
+> Column-oriented databases: A Columnar databases that use CQL include apache Cassandra, DataStax, Microsoft Azure Cosmos DB
+and ScyllaDB
+
+> Document databases: A document database stores data in JSON, BSON, or XML documents.  Documents in the database can be 
+nested. Particular elements can be indexed for faster querying.
+
+> Graph databases: A graph database focuses on the relationship between data elements. Each element is contained as a node.
+  Ex: Neo4j, GraphQl   
+  
+  https://phoenixnap.com/kb/graph-database

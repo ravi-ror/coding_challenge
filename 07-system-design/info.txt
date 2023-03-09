@@ -1,50 +1,46 @@
-System desgin problems:
------------------------
-
-parking lot problem
-design zomato / swiggy
-design facebook / twitter
-design netflix
-design youtube
-design whattsapp
-design amazon / flipkart
-design payment system
-blockchain application
-
-URL Shortening Service - TinyURL Design
-Distributed Cache Design
-Ride-Sharing Service - Uber Design
-Online Dating Service - Tinder Design
-File Sharing Service - Dropbox Design
-Distributed Message Queue System Design
-Stripe - Payment Gateway System Design
-
-
 Technologies and terms to learn:
 --------------------------------
 
-Monolithics, microservices
+Requirements analysis and design: functional , non-functional, data protection compliance, security
+
+
+Architecture: Monolithics, microservices, event driven
 gateways: kong, ambassador
+Global load balancer for geo distributed app: https://dmagda.hashnode.dev/what-makes-the-architecture-of-geo-distributed-apps-different
 orchestration: docker, kubernetes, istio service discovery
 Authentication: hydra, oauth
-loadbalancers: nginx (vertical horizontal scaling, loadbalancing algorithms)
-Monitoring: graphana, promethous, NewRelic
-auto instrumentation with jaegar, zinpkin, open telemetery
-servers: apache, nginx, puma, IIS
+loadbalancers: nginx (vertical horizontal scaling, loadbalancing algorithms, reverse proxy, proxy)
+Monitoring: graphana, promethous
+Logging: kibana, azure log analytics, logstash, datadog
 Message broker: Rabbitmq, kafka with avro schema (with schema registry) 
-cloud: AWS, Google, Azure
+Auto instrumentation:  NewRelic, jaegar, zipkin, open telemetery (opentelemetry.io one collector for all vendor)
+Servers: apache, nginx, puma, IIS
 
+cloud: AWS, Google, Azure
 AWS services: s3 bucket, glacier, Amazon Lambda,  serverless, ec2, rds, cloudFront, SNS, vpc, sqs, elastic beanstalk, dynamo db, Redshift
-Azure srvices: Disastor recovery, canary deployment, dbs, index service, azure functions, VPN, DNS, CDN,
-Logging: kibana, azure log analytics
-db: postgres, mysql, mongodb, redis, memcache, elastic-search, procedure, index, sharding, clustering, cold-storage, hot storage, glacier db,
+Azure srvices: Disastor recovery, canary deployment, dbs, index service, azure functions, VPN, DNS,
+CDN: cloudflare, cloudfront
+TLS
+
+
+db: postgres, mysql, mongodb, dynamo db, cassandra redis, memcache, procedure, index, sharding, clustering, cold-storage, hot storage, glacier db,
 bigdata, hadoop, hbase, hive, master-client, replication
+Searching: elastic-search, azure index service
 multithreading, multiprocess
-cycler, zapier, mixpanel , rudder, Disposable Temporary Email (inboxkitten opensource)
-CRM: salesforce, zoho, zendesk, hubspot
+workflows automation: (zapier, cyclr, actionflow) integration with other tools like slack email etc... 
+windmill (Build endpoints, workflows & ETLs, UIs with code)
+
+data pipelines: rudderstack, airbyte, segment (collect and send customer data in real-time from your websites, mobile apps, and warehouses to the tools
+used by marketing, analytics, product, and customer success teams. )
+
+Disposable Temporary Email (inboxkitten opensource)
+CRM and Product Analytics tools: mixpanel, salesforce, zoho, zendesk, hubspot, google analytics
+CMS: wordpress, zoomla, drupal, magento
 Metabase, schemaspy to show schema of db
 conferencing: webex, zoom, google meet, ms team
-Security: captcha, rate-limiter, WAF (firewall)
+Security: threats and vulnerabilty ( stride model: https://en.wikipedia.org/wiki/STRIDE_(security)), OWASP, authorization, oauth, captcha,
+rate-limiter, antivirus scanning media, WAF (firewall), Security goals (CIA - confidentiality, integrity, Availability)
+
 static code analysis: sonarQube
 linting, prettier, test-cases (rspec, mocha, cucumber)
 automation: selenium, protrector
@@ -57,6 +53,19 @@ editors: sublime, vscode(with gitlens extenstion)
 jenkins-x
 storybook, swagger api listing
 
+mermaid-js (JavaScript based diagramming and charting tool)
+Whiteboard Tools: draw.io / balsamiq / excalidraw / miro / (wireframe tools)
+design template/ideas: invision
+
+own package registry: like myget, or azure
+Data Compliance: (https://www.simplelegal.com/blog/data-compliance-regulations) GDPR, HIPAA
+
+
+Tech stacks:
+===========
+MERN
+MEAN
+MEVN (vue.js)
 
 Channels and blogs
 ==================
@@ -95,3 +104,185 @@ https://www.interviewbit.com/courses/system-design
 https://github.com/checkcheckzz/system-design-interview
 https://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview
 https://www.educative.io/collection/5668639101419520/5649050225344512
+
+
+System desgin problems:
+-----------------------
+
+parking lot problem
+design zomato / swiggy
+design facebook / twitter
+design netflix
+design youtube
+design whattsapp
+design amazon / flipkart
+design payment system
+blockchain application
+
+URL Shortening Service - TinyURL Design
+Distributed Cache Design
+Ride-Sharing Service - Uber Design
+Online Dating Service - Tinder Design
+File Sharing Service - Dropbox Design
+Distributed Message Queue System Design
+Stripe - Payment Gateway System Design
+
+
+System Design Guide
+====================
+
+Designing a URL Shortening Service Like TinyURL
+System Design Problems
+Designing Pastebin
+Designing Instagram
+Designing Dropbox
+Designing Facebook Messenger
+Designing Twitter
+Designing Youtube or Netflix
+Designing Typeahead Suggestion
+Designing an API Rate Limiter
+Designing Twitter Search
+Designing Facebook’s Newsfeed
+Designing a Web Crawler
+Designing Yelp or Nearby Friends
+Designing Uber backend
+Designing Ticketmaster
+
+Glossary of System Design Basics
+System Design Basics
+Key Characteristics of Distributed Systems
+Load Balancing
+Caching
+Data Partitioning
+Indexes
+Proxies
+Redundancy and Replication
+SQL vs. NoSQL
+CAP Theorem
+PACELC Theorem (New)
+Consistent Hashing (New)
+Long-Polling vs WebSockets vs Server-Sent Events
+Bloom Filters (New)
+Quorum (New)
+Leader and Follower (New)
+Heartbeat (New)
+Checksum (New)
+
+
+Dynamo db: Introduction
+High-level Architecture
+Data Partitioning
+Replication
+Vector Clocks and Conflicting Data
+The Life of Dynamo’s put() & get() Operations
+Anti-entropy Through Merkle Trees
+Gossip Protocol
+Dynamo Characteristics and Criticism
+Summary: Dynamo
+
+
+Cassandra: How to Design a Wide-column NoSQL Database?
+Cassandra: Introduction
+High-level Architecture
+Replication
+Cassandra Consistency Levels
+Gossiper
+Anatomy of Cassandra's Write Operation
+Anatomy of Cassandra's Read Operation
+Compaction
+Tombstones
+
+
+Kafka: How to Design a Distributed Messaging System?
+Messaging Systems: Introduction
+Kafka: Introduction
+High-level Architecture
+Kafka: Deep Dive
+Consumer Groups
+Kafka Workflow
+Role of ZooKeeper
+Controller Broker
+Kafka Delivery Semantics
+Kafka Characteristics
+
+
+Chubby: How to Design a Distributed Locking Service
+Chubby: Introduction
+High-level Architecture
+Design Rationale
+How Chubby Works
+File, Directories, and Handles
+Locks, Sequencers, and Lock-delays
+Sessions and Events
+Master Election and Chubby Events
+Caching
+Database
+Scaling Chubby
+
+
+GFS: How to Design a Distributed File Storage System?
+Google File System: Introduction
+High-level Architecture
+Single Master and Large Chunk Size
+Metadata
+Master Operations
+Anatomy of a Read Operation
+Anatomy of a Write Operation
+Anatomy of an Append Operation
+GFS Consistency Model and Snapshotting
+Fault Tolerance, High Availability, and Data Integrity
+Garbage Collection
+Criticism on GFS
+
+
+HDFS: How to Design a Distributed File Storage System?
+Hadoop Distributed File System: Introduction
+High-level Architecture
+Deep Dive
+Anatomy of a Read Operation
+Anatomy of a Write Operation
+Data Integrity & Caching
+Fault Tolerance
+HDFS High Availability (HA)
+HDFS Characteristics
+
+BigTable: How to Design a Wide-column Storage System?
+BigTable: Introduction
+BigTable Data Model
+System APIs
+Partitioning and High-level Architecture
+SSTable
+GFS and Chubby
+Bigtable Components
+Working with Tablets
+The Life of BigTable's Read & Write Operations
+Fault Tolerance and Compaction
+BigTable Refinements
+BigTable Characteristics
+
+
+
+System Design Patterns
+
+Introduction: System Design Patterns
+
+1. Bloom Filters
+2. Consistent Hashing
+3. Quorum
+4. Leader and Follower
+5. Write-ahead Log
+6. Segmented Log
+7. High-Water Mark
+8. Lease
+9. Heartbeat
+10. Gossip Protocol
+11. Phi Accrual Failure Detection
+12. Split Brain
+13. Fencing
+14. Checksum
+15. Vector Clocks
+16. CAP Theorem
+17. PACELC Theorem
+18. Hinted Handoff
+19. Read Repair
+20. Merkle Trees
