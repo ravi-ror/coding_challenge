@@ -22,7 +22,6 @@ Azure srvices: Disastor recovery, canary deployment, dbs, index service, azure f
 CDN: cloudflare, cloudfront
 TLS
 
-
 db: postgres, mysql, mongodb, dynamo db, cassandra redis, memcache, procedure, index, sharding, clustering, cold-storage, hot storage, glacier db,
 bigdata, hadoop, hbase, hive, master-client, replication
 Searching: elastic-search, azure index service
@@ -45,7 +44,8 @@ static code analysis: sonarQube
 linting, prettier, test-cases (rspec, mocha, cucumber)
 automation: selenium, protrector
 cloud provisioning and deployment: ansible, helm, Terraform, puppet, chef
-twilio, slack, jira
+Agile Project managemnet: github, trello, twilio, slack, jira, pointing poker, kendis (PI planning and tracking), 
+
 CI-CD pipelining, circle-ci
 postman
 load testing: jmeter, 
@@ -81,6 +81,10 @@ https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX
 https://www.youtube.com/c/sudoCODE/videos
 
 https://www.youtube.com/watch?v=fO8hGwhRSYY
+
+https://interviewready.io/blog
+
+https://github.com/InterviewReady/system-design-resources
 
 blogs
 

@@ -1,0 +1,51 @@
+Getting started with contributing to open source
+
+https://opensource.guide/starting-a-project/
+https://opensource.guide/how-to-contribute/
+
+https://github.com/firstcontributions
+
+
+How to Get Started with Open Source | A Beginner-Friendly Guide
+https://www.youtube.com/watch?v=MkaIrwOlP6Y
+
+
+https://stackoverflow.blog/2020/08/03/getting-started-with-contributing-to-open-source/
+
+https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/
+
+
+Here’s a list of resources that can help jumpstart your open source career:
+
+https://yourfirstpr.github.io/
+https://www.firsttimersonly.com/
+https://github.com/firstcontributions/first-contributions
+https://contributor.ninja/
+https://opensourcefriday.com/
+https://24pullrequests.com/
+https://github.com/larymak/Python-project-Scripts
+https://habitica.com/static/front
+https://www.codetriage.com/
+https://hacktoberfest.digitalocean.com/
+https://gauger.io/contrib
+http://issuehub.io/
+https://github.com/shainakrumme/open-source-handbook
+https://github.com/tapaswenipathak/Open-Source-Programs
+http://www.pullrequestroulette.com/
+https://github.com/MunGell/awesome-for-beginners
+https://bugzilla.mozilla.org/describecomponents.cgi
+
+
+Use Github’s search tool to find projects by entering beginner-friendly contribution tags like good-first-issue,
+good-first-bug, beginner-friendly, easy, low-hanging-fruit, first-timers-only, etc. Filter search results to return
+issues in open states and in the languages you’d like to work in. There are tons of other tools, platforms, and
+programs where you could find open source projects that I’ll list at the end of this article to help you with your
+search. 
+
+
+
+OpenSource alternatives:
+
+https://opensource.builders/
+https://www.opensourcealternative.to/
+https://www.producthunt.com/

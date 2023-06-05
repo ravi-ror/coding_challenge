@@ -1,0 +1,11 @@
+https://www.uxpin.com/studio/blog/building-component-library-guide/
+https://www.uxpin.com/studio/blog/atomic-design-system/
+
+Step 1. Create Interface Inventory
+Step 2. Select Tools and Framework
+  use storybook to develop
+  Syncing design and development
+Step 3. Get Components
+    With your list of components and corresponding categories from the interface audit, it’s time to develop your component library
+    Add documentation 
+    Building a component library in Storybook
