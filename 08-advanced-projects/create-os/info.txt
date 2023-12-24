@@ -1,0 +1,17 @@
+Technologies:
+
+C#
+C
+x86 Assembly
+Algorithms
+System Architecture
+C++
+Data Structures
+
+
+https://github.com/amaneureka/AtomOS
+
+https://www.quora.com/How-can-I-make-my-own-operating-system?no_redirect=1
+https://www.quora.com/How-can-I-create-an-operating-system-1/answer/Aman-Priyadarshi-2?srid=zmx9
+https://www.quora.com/profile/Aman-Priyadarshi-2
+https://www.quora.com/How-can-I-create-an-operating-system-1

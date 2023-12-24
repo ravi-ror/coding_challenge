@@ -49,3 +49,59 @@ OpenSource alternatives:
 https://opensource.builders/
 https://www.opensourcealternative.to/
 https://www.producthunt.com/
+
+
+
+
+
+How to Contribute to an Open Source Project on GitHub - Free video series
+https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
+
+
+How to write an Open Source JavaScript Library - Free video series
+https://egghead.io/series/how-to-write-an-open-source-javascript-library
+
+What open source project should I contribute to? - Blogpost
+https://medium.com/@kentcdodds/what-open-source-project-should-i-contribute-to-7d50ecfe1cb4
+
+
+How getting into open source has been awesome for me - Blogpost
+https://medium.com/p/how-getting-into-open-source-has-been-awesome-for-me-8480cd756a80
+
+
+Open Source Stamina - Blogpost
+https://medium.com/@kentcdodds/open-source-stamina-dafd063f9932
+
+First Timers Only - Blogpost
+https://medium.com/@kentcdodds/first-timers-only-78281ea47455
+
+How to Open Source Your Stuff - Talk
+https://github.com/kentcdodds/talks#how-to-open-source-your-stuff
+
+GitHub Pull Request Tutorial - Tutorial Blogpost
+https://www.thinkful.com/learn/github-pull-request-tutorial/
+
+Try Git - Interactive intro course on git
+https://try.github.io/
+
+Lodash & Open Source - JavaScript Air Podcast Episode
+http://jsair.io/lodash
+
+FirstPR.me - Site to find your first Pull Request
+http://firstpr.me/
+
+@YourFirstPR - Twitter Account
+https://twitter.com/yourfirstpr
+
+@first_tmrs_only - Twitter Account
+https://twitter.com/first_tmrs_only
+
+Up-For-Grabs.net - Currated list of GitHub issues
+http://up-for-grabs.net/
+
+Creating a Pull Request - GitHub help article
+https://help.github.com/articles/creating-a-pull-request/
+
+Hello World - GitHub help article
+https://guides.github.com/activities/hello-world/
+

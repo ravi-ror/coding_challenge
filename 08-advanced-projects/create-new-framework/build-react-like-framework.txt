@@ -1,0 +1,3 @@
+https://pomb.us/build-your-own-react/
+https://javascript.plainenglish.io/build-a-react-like-lib-from-scrach-b54878a12c3d
+https://itnext.io/creating-our-own-react-from-scratch-82dd6356676d

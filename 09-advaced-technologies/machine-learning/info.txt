@@ -1,0 +1,11 @@
+Python libraries that are used in Machine Learning are: 
+
+Numpy
+Scipy
+Scikit-learn
+Theano
+TensorFlow
+Keras
+PyTorch
+Pandas
+Matplotlib
